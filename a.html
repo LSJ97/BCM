@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" media="screen" rel="stylesheet" type="text/css" />
+        <script src="" type="text/javascript"></script>
+    <title>Document</title>
+    <style>
+        *{margin: 0 auto; padding: 0; width: 960px;} 
+        ul{list-style: none;}
+        a{text-decoration: none; color: #000;}
+        .notice{width: 700px; margin: 0px auto;  height: 60px; position: relative;
+         overflow: hidden; /*이 부분만 풀면 내용 숨겨져요*/ }
+        .notice p{position: absolute; top: 18px;}
+        .notice ul{position: relative;}
+        .notice ul li{position: relative; padding: 0 10%; height: 60px; line-height: 60px;}
+        .notice .btn{position: absolute; right: 20px; top: 50%; transform: translateY(-50%); width: 100px; text-align: center; font-size: 13px; cursor: pointer;}
+        .notice .btn span:nth-child(1){margin-right: 15%;}
+        #one-box {border: 1px solid #ccc; float: left; width: 30%; padding: 10px; height: 500px;}
+        #two-box {border: 1px solid red; float: left; width: 30%; padding: 10px; height: 500px;}
+        #three-box {border: 1px solid blue; float: left; width: 30%; padding: 10px; height: 500px;}
+    </style>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/scroll.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="notice">
+            <p>공지사항</p>
+            <ul id="scroll">
+                <li><a href="#">1. Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">2. Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">3. Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">4. Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">5. Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">6. Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">7. Lorem ipsum dolor sit amet.</a></li>
+            </ul>
+            <div class="btn">
+                <span>▲</span>
+                <span>▼</span>
+            </div>
+        </div>
+    </div>
+    <div id="one-box">
+
+    </div>
+    <div id="two-box">
+
+    </div>
+    <div id="three-box">
+
+    </div>
+</body>
+</html>
