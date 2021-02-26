@@ -1,0 +1,512 @@
+@import "reset.css";
+@import "common.css";
+
+/* navbar */
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*depth들을 감싸고있는 박스*/
+.nav {
+  text-align: center;
+}
+
+/*depth1*/
+.nav .dep1 {
+  font-size: 0px;
+  padding-top: 20px;
+  height: 100px;
+}
+
+.nav .dep1 > li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 16px;
+}
+.nav .dep1 > li.logo,
+.nav .dep1 > li.login {
+  width: 200px;
+  padding: 30px 0; /*li.menu를 한꺼번에 묶어서 하지않은 이유는 a태그때문에 li.menu가 갇혀있기때문*/
+}
+.nav .dep1 > li.menu {
+  width: 150px;
+  padding: 0px;
+}
+
+/*depth2*/
+.nav .dep2 {
+  display: none;
+}
+.nav .dep2 a {
+  display: block;
+  padding: 10px 0;
+}
+
+.nav .dep1 > li > a {
+  display: block;
+  padding: 30px 0;
+}
+
+/*dep1의 5가지메뉴(로고,로그인제외) hover시 감싸고있는 부모클래스인 nav클래스에 배경색 줌
+  개발실패*/
+.nav .dep1 > li.menu:hover + .nav {
+  background-color: aliceblue;
+}
+
+/*로고,로그인li 를 제외한 메뉴li에 hover시 dep2를 보여줌*/
+.nav .dep1 > li > a:hover ~ .dep2 {
+  display: block;
+  background-color: aliceblue; /*이 배경색은 그냥 구분하기 쉽게 임시로 적용*/
+}
+
+/*밑의 문장을 위의문장으로 교체해야하는데 잘 안됨*/
+.nav .dep1:hover .dep2 {
+  display: block;
+  background-color: aliceblue; /*이 배경색은 그냥 구분하기 쉽게 임시로 적용*/
+}
+
+.nav .dep1 > li:hover > a {
+  color: green;
+}
+.nav .dep2 > li:hover > a {
+  color: green;
+}
+
+/*.menu_box{
+      position: absolute;
+      top:50px;
+      background-color: brown;
+      width:50px;
+      height:50px;
+  }*/
+
+/* main */
+main {
+  background-image: url("background.PNG");
+  width: 100%;
+  height: 740px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* intro */
+
+.intro {
+  margin: auto;
+  padding-top: 80px;
+  width: 446px;
+  height: 360px;
+}
+
+.intro > h2,
+h1,
+h4 {
+  text-align: center;
+  color: #5d5c5a;
+}
+.intro > h2 {
+  font-weight: var(--weight-bold);
+  font-size: 24px;
+}
+.intro > h1 {
+  font-size: 64px;
+  margin: 10px;
+}
+.quick-menu > h4 {
+  font-size: var(--font-micro);
+  font-size: 14px;
+}
+
+/* quick-menu */
+
+.quick-menu h5 {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.quick-menu {
+  display: flex;
+  margin: 0 110px;
+  justify-content: center;
+  text-align: center;
+}
+.up,
+.down {
+  display: flex;
+}
+
+.up > div {
+  margin: 0px 10px;
+  width: 262px;
+  height: 347px;
+  border: 1px solid #ddd;
+  position: relative;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.down > div {
+  margin: 0px 10px;
+  width: 262px;
+  height: 347px;
+  border: 1px solid #ddd;
+  position: relative;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.quick-menu p,
+h2,
+h5 {
+  padding-top: 10px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.hide a {
+  width: 60%;
+  color: #fff;
+  padding: 7px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.quick-menu a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.hide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.5s;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quick-menu__counseling,
+.quick-menu__counseling a {
+  background-color: #aa47bce3;
+}
+
+.quick-menu__counseling__content {
+  padding-top: 60px;
+}
+
+.quick-menu__counseling:hover .quick-menu__counseling__content {
+  opacity: 1;
+}
+
+.quick-menu__program,
+.quick-menu__program a {
+  background-color: #64b5f6;
+}
+.quick-menu__program__content {
+  padding-top: 60px;
+}
+
+.quick-menu__program:hover .quick-menu__program__content {
+  opacity: 1;
+}
+
+.quick-menu__application,
+.quick-menu__application a {
+  background-color: #4dd0e1e7;
+}
+
+.quick-menu__application__content {
+  padding-top: 90px;
+}
+
+.quick-menu__application:hover .quick-menu__application__content {
+  opacity: 1;
+}
+
+.quick-menu__job-opening {
+  background-color: #aed581e8;
+}
+
+.job-opening {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+/* 227 */
+@media screen and (max-width: 1142px) {
+  .up > div {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1142px) {
+  .down > div {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 887px) {
+  .up,
+  .down {
+    display: block;
+  }
+
+  img {
+    display: none;
+  }
+
+  .up > div {
+    margin: 10px 5px;
+    width: 262px;
+    height: 220px;
+  }
+
+  .down > div {
+    margin: 10px 5px;
+    width: 262px;
+    height: 220px;
+  }
+
+  .quick-menu__counseling__content,
+  .quick-menu__program__content {
+    padding-top: 10px;
+  }
+
+  .quick-menu__application__content {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .up > div {
+    width: 220px;
+  }
+
+  .down > div {
+    width: 220px;
+  }
+}
+
+/* notice */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.notice {
+  width: 700px;
+  height: 60px;
+  position: relative;
+  overflow: hidden; /*이 부분만 풀면 내용 숨겨져요*/
+}
+.notice h3 {
+  text-decoration: underline;
+  text-underline-position: under;
+  position: absolute;
+  top: 18px;
+  color: #8ac4d0;
+}
+.notice ul {
+  position: relative;
+}
+.notice ul li {
+  position: relative;
+  padding: 0 13%;
+  height: 60px;
+  line-height: 60px;
+}
+.notice .btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  text-align: center;
+  font-size: 8px;
+  cursor: pointer;
+}
+.notice .btn span:nth-child(1) {
+  margin-right: 15%;
+}
+.list {
+  float: left;
+}
+.list2 {
+  float: left;
+}
+/* 탭 메뉴*/
+.tabmenu {
+  width: 600px;
+  margin: 0;
+}
+.tabmenu ul {
+  margin-top: 20px;
+  height: 30px;
+  width: 100%;
+  border-left: 1px solid #eee;
+}
+.tabmenu ul li {
+  float: left;
+  width: 140px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  cursor: pointer;
+  border-left: 0;
+}
+.tabmenu ul li.on {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  color: skyblue;
+  font-weight: bold;
+  border-left: 1px solid #eee;
+}
+/* 탭 모양 구성 */
+.tabmenu .list {
+  width: 100%;
+  height: 100%;
+  border-top: 0;
+  border: 1px solid #eee;
+  padding: 20px;
+  font-size: 15px;
+  display: none;
+}
+.tabmenu .list2 {
+  width: 100%;
+  height: 100%;
+  border-top: 0;
+  border: 1px solid #eee;
+  padding: 20px;
+  font-size: 15px;
+  display: none;
+}
+/* 메뉴 */
+.item {
+  overflow: hidden;
+  padding: 15px;
+  border-top: none;
+}
+.thumnail {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  margin-left: 10px;
+  border-top: none;
+}
+
+/* 뉴스 */
+.news {
+  width: 200px;
+  height: 290px;
+  border: 1px solid #000;
+}
+.news:hover {
+  background-color: yellow;
+}
+.news2 {
+  width: 200px;
+  height: 290px;
+  border: 1px solid #bbb;
+}
+.news2:hover {
+  background-color: blue;
+}
+
+/* footer */
+.bottom_menu {
+  text-align: center;
+  margin-top: 300px;
+  font-size: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(35, 49, 71);
+  color: white;
+  border-top: 1px solid rgb(128, 129, 219);
+  box-shadow: 1px 1px 8px #778ece;
+}
+.bottom_menu .bottom_1 {
+  position: relative;
+  font-size: 17px;
+  color: white;
+  width: 25%;
+  line-height: 420%;
+  display: inline-block;
+
+  transition-property: all;
+  transition-duration: 2s;
+}
+.bottom_menu .bottom_2 {
+  position: relative;
+  font-size: 17px;
+  color: white;
+  width: 25%;
+  line-height: 420%;
+  display: inline-block;
+
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.bottom_c_1 {
+  text-align: center;
+  background-color: cornflowerblue;
+  height: 0px;
+  display: block;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 2s;
+}
+.bottom_c_2 {
+  text-align: center;
+  background-color: cornflowerblue;
+  height: 0px;
+  display: block;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.footer {
+  padding: 20px;
+  padding-left: 200px;
+  font-size: 13px;
+  text-align: left;
+  background-color: rgb(79, 101, 145);
+  color: WHITE;
+}
+.footer_1,
+.footer_2,
+.footer_3 {
+  margin-bottom: 10px;
+}
+.footer_1 {
+  display: flex;
+}
+.footer_1_c {
+  margin-right: 20px;
+}
