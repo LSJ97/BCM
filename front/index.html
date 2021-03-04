@@ -9,6 +9,7 @@
     <script src="js/scroll.js"></script>
     <script src="js/tabmenu.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/nav.js"></script>
     <link rel="stylesheet" href="css/index-style.css" />
     <meta charset="UTF-8" />
     <title>main</title>
@@ -18,55 +19,59 @@
       <navbar>
         <div class="nav">
           <ul class="dep1">
-            <li class="logo">영진전문대학교</li>
-            <li class="menu">
-              <a href="#">진로설계</a>
-              <ul class="dep2">
-                <li><a href="#">메뉴1-1</a></li>
-                <li><a href="#">메뉴1-2</a></li>
-                <li><a href="#">메뉴1-3</a></li>
-              </ul>
-            </li>
-            <li class="menu">
-              <a href="#">직무역량강화</a>
-              <ul class="dep2">
-                <li><a href="#">메뉴2-1</a></li>
-                <li><a href="#">메뉴2-2</a></li>
-                <li><a href="#">메뉴2-3</a></li>
-              </ul>
-            </li>
-            <li class="menu">
-              <a href="#">구직역량강화</a>
-              <ul class="dep2">
-                <li><a href="#">메뉴3-1</a></li>
-                <li><a href="#">메뉴3-2</a></li>
-                <li><a href="#">메뉴3-3</a></li>
-              </ul>
-            </li>
-            <li class="menu">
-              <a href="#">구직서비스</a>
-              <ul class="dep2">
-                <li><a href="#">메뉴4-1</a></li>
-                <li><a href="#">메뉴4-2</a></li>
-                <li><a href="#">메뉴4-3</a></li>
-              </ul>
-            </li>
-            <li class="menu">
-              <a href="#">상담관리</a>
-              <ul class="dep2">
-                <li><a href="#">메뉴4-1</a></li>
-                <li><a href="#">메뉴4-2</a></li>
-                <li><a href="#">메뉴4-3</a></li>
-              </ul>
-            </li>
-            <li class="login">로그인</li>
+              <li class="logo">
+                  영진전문대학교
+              </li>
+              <li class="menu" onmouseover="nav_on()" onmouseout="nav_off()">
+                  <a href="#">진로설계</a>
+                  <ul class="dep2" onmouseover="nav_on()" >
+                      <li><a href="#">진로심리검사</a></li>
+                      <li><a href="#">직업정보</a></li>
+                  </ul>
+              </li>
+              <li class="menu" onmouseover="nav_on()" onmouseout="nav_off()">
+                  <a href="#">직무역량강화</a>
+                  <ul class="dep2" onmouseover="nav_on()" >
+                      <li><a href="#">지원프로그램</a></li>
+                      <li><a href="#">자격증/수료증 관리</a></li>
+                      <li><a href="#">백호마일리지</a></li>
+                  </ul>
+              </li>
+              <li class="menu" onmouseover="nav_on()" onmouseout="nav_off()">
+                  <a href="#">구직역량강화</a>
+                  <ul class="dep2" onmouseover="nav_on()" >
+                      <li><a href="#">이력서/자소서 tip!</a></li>
+                      <li><a href="#">이력서/자소서 등록</a></li>
+                      <li><a href="#">온라인 멘토링</a></li>
+                      <li><a href="#">모의면접</a></li>
+                  </ul>
+              </li>
+              <li class="menu" onmouseover="nav_on()" onmouseout="nav_off()">
+                  <a href="#">구직서비스</a>
+                  <ul class="dep2" onmouseover="nav_on()" >
+                      <li><a href="#">채용정보</a></li>
+                      <li><a href="#">채용등록</a></li>
+                      <li><a href="#">입사지원관리</a></li>
+                  </ul>
+              </li>
+              <li class="menu" onmouseover="nav_on()" onmouseout="nav_off()">
+                  <a href="#">상담관리</a>
+                  <ul class="dep2" onmouseover="nav_on()">
+                      <li><a href="#">허허</a></li>
+                  </ul>
+              </li>
+              <li class="login">
+                  로그인
+              </li>
           </ul>
+        </div>
+        <div class="nav2"><!--nav2 클래스는 dep2의 배경색만을 위한 클래스-->
         </div>
       </navbar>
 
       <div class="intro">
         <h2>영진전문대학은 취업의 격이 다릅니다.</h2>
-        <h1>취업정보센터</h1>
+        <h1 class="intro_center">취업정보센터</h1>
         <h4>YEUNGJIN UNIVERSITY JOP CENTER</h4>
       </div>
       <div class="quick-menu">
@@ -135,71 +140,51 @@
 
     <!-- 공지사항 -->
     <div class="container">
+
       <div class="notice">
-        <h3>공지사항</h3>
-        <ul id="scroll">
-          <li>
-            <a href="#"><b>1. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-          <li>
-            <a href="#"><b>2. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-          <li>
-            <a href="#"><b>3. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-          <li>
-            <a href="#"><b>4. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-          <li>
-            <a href="#"><b>5. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-          <li>
-            <a href="#"><b>6. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-          <li>
-            <a href="#"><b>7. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-          <li>
-            <a href="#"><b>8. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-          <li>
-            <a href="#"><b>9. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-          <li>
-            <a href="#"><b>10. Lorem ipsum dolor sit amet.</b></a>
-          </li>
-        </ul>
-        <div class="btn">
-          <span>▲</span>
-          <span>▼</span>
-        </div>
+          <h3>공지사항</h3>
+          <ul id="scroll">
+              <li><a href="#"><b>1. Lorem ipsum dolor sit amet.</b></a></li>
+              <li><a href="#"><b>2. Lorem ipsum dolor sit amet.</b></a></li>
+              <li><a href="#"><b>3. Lorem ipsum dolor sit amet.</b></a></li>
+              <li><a href="#"><b>4. Lorem ipsum dolor sit amet.</b></a></li>
+              <li><a href="#"><b>5. Lorem ipsum dolor sit amet.</b></a></li>
+              <li><a href="#"><b>6. Lorem ipsum dolor sit amet.</b></a></li>
+              <li><a href="#"><b>7. Lorem ipsum dolor sit amet.</b></a></li>
+              <li><a href="#"><b>8. Lorem ipsum dolor sit amet.</b></a></li>
+              <li><a href="#"><b>9. Lorem ipsum dolor sit amet.</b></a></li>
+              <li><a href="#"><b>10. Lorem ipsum dolor sit amet.</b></a></li>
+          </ul>
+          <div class="btn">
+              <span>▲</span>
+              <span>▼</span>
+          </div>
       </div>
       <div class="tabmenu">
-        <ul>
-          <li class="inside">교내 채용</li>
-          <li class="outside">교외 채용</li>
-        </ul>
-        <div class="list">
-          <!-- 교내 채용 공고 리스트 -->
-          <div class="thumnail">
-            <img src="http://placehold.it/40x40/8ac4d0" />
-            <b>1. Lorem ipsum dolor sit amet. </b>
-            <p>만료일 0000-00-00</p>
-          </div>
+          <ul>
+              <li class="inside">교내 채용 정보</li>
+              <li class="outside">교외 채용 정보</li>
+          </ul>
+      <div class="list"> 
+                  <!-- 교내 채용 공고 리스트 -->
+                  <div class="thumnail">
+                      <img src="http://placehold.it/40x40/8ac4d0">
+                      <b>1. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
+                  </div>
 
-          <div class="thumnail">
-            <img src="http://placehold.it/40x40/8ac4d0" />
-            <b>2. Lorem ipsum dolor sit amet. </b>
-            <p>만료일 0000-00-00</p>
-          </div>
+                  <div class="thumnail">
+                      <img src="http://placehold.it/40x40/8ac4d0">
+                      <b>2. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
+                  </div>
+ 
 
-          <div class="thumnail">
-            <img src="http://placehold.it/40x40/8ac4d0" />
-            <b>3. Lorem ipsum dolor sit amet. </b>
-            <p>만료일 0000-00-00</p>
-          </div>
+                  <div class="thumnail">
+                      <img src="http://placehold.it/40x40/8ac4d0">
+                      <b>3. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
+                  </div>
 
-          <!-- <div class="thumnail">
+
+                  <div class="thumnail">
                       <img src="http://placehold.it/40x40/8ac4d0">
                       <b>4. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
                   </div>
@@ -208,29 +193,29 @@
                   <div class="thumnail">
                       <img src="http://placehold.it/40x40/8ac4d0">
                       <b>5. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
-                  </div> -->
-        </div>
-        <div class="list2">
+                  </div>
+                  
+      </div>
+      <div class="list2">
           <!-- 교외 채용 공고 리스트 -->
           <div class="thumnail">
-            <img src="http://placehold.it/40x40/8ac4d0" />
-            <b>6. Lorem ipsum dolor sit amet. </b>
-            <p>만료일 0000-00-00</p>
+              <img src="http://placehold.it/40x40/8ac4d0">
+              <b>6. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
           </div>
 
           <div class="thumnail">
-            <img src="http://placehold.it/40x40/8ac4d0" />
-            <b>7. Lorem ipsum dolor sit amet. </b>
-            <p>만료일 0000-00-00</p>
+              <img src="http://placehold.it/40x40/8ac4d0">
+              <b>7. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
           </div>
+
+
+          <div class="thumnail" >
+              <img src="http://placehold.it/40x40/8ac4d0">
+              <b>8. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
+          </div>
+
 
           <div class="thumnail">
-            <img src="http://placehold.it/40x40/8ac4d0" />
-            <b>8. Lorem ipsum dolor sit amet. </b>
-            <p>만료일 0000-00-00</p>
-          </div>
-
-          <!-- <div class="thumnail">
               <img src="http://placehold.it/40x40/8ac4d0">
               <b>9. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
           </div>
@@ -239,45 +224,85 @@
           <div class="thumnail">
               <img src="http://placehold.it/40x40/8ac4d0">
               <b>10. Lorem ipsum dolor sit amet.  </b><p>만료일 0000-00-00</p>
-          </div> -->
-        </div>
-      </div>
-      <div class="news" style="float: left">
-        <a
-          href="http://www.newsnjob.com/news/articleList.html?sc_section_code=S1N1&view_type=sm"
-        >
-          <img
-            class="img-chang"
-            style="width: 100%"
-            src="img/newsnjob_changeop.png"
-        /></a>
-      </div>
-      <div class="news2" style="float: left">
-        <a
-          href="http://www.newsnjob.com/news/articleList.html?sc_section_code=S1N2&view_type=sm"
-        >
-          <img
-            class="img-chwie"
-            style="width: 100%"
-            src="img/newsnjob_chwieop.png"
-        /></a>
-      </div>
-      <div class="callnum">
-        <img class="callnum" src="img/guide.png" />
-      </div>
-    </div>
+          </div>
+</div>
+
+<div class="photo">
+<!-- <div class="photo-name">
+  <p>포토존</p>
+</div> -->
+      <div class="photo-item"><img src="http://placehold.it/440x440/8ac4d0"></div>
+      <div class="photo-item"><img src="http://placehold.it/440x440/ccc"></div>
+      <div class="photo-item"><img src="http://placehold.it/440x440/000"></div>
+      <div class="photo-item"><img src="http://placehold.it/440x440/440a67"></div>
+
+
+  <a href="#">&lt;</a>
+  <a href="#">&gt;</a>
+
+</div>
+
+<div class="icon">
+  <div class="news1">
+      <p>창업 뉴스 보러 가기</p>
+      <a href="#"><img src="img/창업.png"></a>
+      <h5>창업 뉴스</h5>
+  </div>
+
+  <div class="news2">
+      <p>취업 뉴스 보러 가기</p>
+      <a href="#"><img src="img/취업.png"></a>
+      <h5>취업 뉴스</h5>
+  </div>
+  
+  <div class="call">
+      <img src="img/guide.png">
+  </div>
+</div>
+
+</div>
 
     <!-- footer -->
     <div class="bottom_menu">
-      <div class="bottom_1" onclick="bottom_script_1()">
-        전공 학과 소개(스크롤주루룩)
-      </div>
-      <div class="bottom_2" onclick="bottom_script_2()">
-        교내사이트(스크롤주루룩)
-      </div>
-    </div>
-    <div class="bottom_c_1">왼쪽메뉴 컨텐츠들</div>
-    <div class="bottom_c_2">오른쪽메뉴 컨텐츠들</div>
+            <div class="bottom_1" onclick="bottom_script_1()">
+                전공 학과 소개(스크롤주루룩)
+            </div>
+            <div class="bottom_2" onclick="bottom_script_2()">
+                교내사이트(스크롤주루룩)
+            </div>
+        </div>
+        <div class="bottom_c_1">
+        </div>
+        <div class="bottom_c_2">
+            <ul class="group1">
+                <li class="group_title">관련사이트</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+                <li>dasd</li>
+            </ul>
+            <ul class="group2">
+                <li class="group_title">부설기관</li>
+                <li>dasd</li>
+                <li>dasd</li>
+
+            </ul>
+            <ul class="group3">
+                <li class="group_title">부속기관</li>
+                <li>dasd</li>
+                <li>dasd</li>
+
+            </ul>
+        </div>
     <div class="footer">
       <ul class="footer_1">
         <li class="footer_1_c">개인정보처리방침</li>
