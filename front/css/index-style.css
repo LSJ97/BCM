@@ -434,22 +434,22 @@ a {
 
 /* 아이콘 */
 .icon {width: 380px; height: 445px; margin-left: 1100px; margin-top: 3px;}
-        .news1 {border: 1px solid #ccc; padding: 10px; width: 40%; height: 160px; float: left; }
-        .news2 {border: 1px solid #ccc; padding: 10px; width: 40%; height: 160px; float: left; margin-left: 5px;}
+        .news1 {border: 1px solid #ccc; padding: 10px; width: 45%; height: 180px; float: left; }
+        .news2 {border: 1px solid #ccc; padding: 10px; width: 45%; height: 180px; float: left; margin-left: 5px;}
         .news2 > a > img{width: 100px; height: 100px; position: absolute;}
         .news2 > p {display: none;}
         .news2:hover > p {display: inline; font-size: 18px; color: white;}
-        .news2:hover {background-color: navy; width: 40%; height: 160px;}
+        .news2:hover {background-color: navy; width: 45%; height: 180px;}
         .news2:hover > h5 {display: none;}
         .news2 > h5 {position: absolute;}
         .news1 > a > img{width: 100px; height: 100px; position: absolute;}
         .news1 > p {display: none;}
         .news1:hover > p {font-size: 19px; color: white; }
-        .news1:hover {background-color: navy; width: 40%; height: 160px;}
+        .news1:hover {background-color: navy; width: 45%; height: 180px;}
         .news1:hover > h5 {display: none;}
         .news1:hover img {display: none;}
         .news1 > h5 {position: absolute;}
-        .call > img {border: 1px solid #ccc; padding: 10px; width: 90%; height: 230px; background-color: #f6f5f5; top: 5px; position: relative;}
+        .call > img {border: 1px solid #ccc; padding: 10px; width: 91%; height: 256px; background-color: #f6f5f5; top: 5px; position: relative;}
 
 /* footer */
 .bottom_menu{
