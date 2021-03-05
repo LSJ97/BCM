@@ -408,7 +408,7 @@ a {
 .thumnail:hover{text-shadow: 5px 3px 2px #ddd;}
 
 /* 포토 슬라이드 */
-.photo {width: 440px; height: 440px; position: absolute; overflow: hidden;  margin-left: 650px; margin-top: 3px;
+.photo {width: 440px; height: 440px; position: absolute; overflow: hidden;  margin-left: 870px; margin-top: 3px;
   border: 1px solid #ccc;}
 .photo a{
   color: #fff;
@@ -433,7 +433,7 @@ a {
 }
 
 /* 아이콘 */
-.icon {width: 380px; height: 445px; margin-left: 1100px; margin-top: 3px;}
+.icon {width: 380px; height: 445px; margin-left: 1320px; margin-top: 3px;}
         .news1 {border: 1px solid #ccc; padding: 10px; width: 45%; height: 180px; float: left; }
         .news2 {border: 1px solid #ccc; padding: 10px; width: 45%; height: 180px; float: left; margin-left: 5px;}
         .news2 > a > img{width: 100px; height: 100px; position: absolute;}
