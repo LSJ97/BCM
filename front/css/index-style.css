@@ -13,15 +13,17 @@ li {
   list-style: none;
 }
 a {
-  text-decoration: none;
+  text-decoration:dotted;
   color: black;
 }
 
+
+
 /*depth들을 감싸고있는 박스*/
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1250px) {
   .nav {
-    width: 1180px;
+    width: 1250px;
   }
 }
 .nav {
@@ -39,7 +41,7 @@ a {
       height: 0px;
       background-color: rgb(231, 231, 231);
       transition-property: all;
-      transition-duration: 1.2s;  
+      transition-duration: 1.2s;   
       z-index: 4;
       
   }
@@ -79,12 +81,13 @@ a {
   /*depth2*/
   .nav .dep2{
       position: relative;
+      width:150px;
       z-index: 4;
       display:block;
       height:0px;
       overflow: hidden;  
-      transition-property: all;
-      transition-duration: 1.2s;  
+      transition-property: height;
+      transition-duration: 1.2s; 
   }
   .nav .dep2 a{
       display:block;
@@ -92,6 +95,7 @@ a {
   }
   .nav .dep1 > li > a{
       display:block;
+      padding: 30px 0;
   }
   
   
@@ -102,37 +106,6 @@ a {
   .nav .dep2 > li:hover > a{
       color:green;
   }
-
-
-.nav2 {
-  position: relative;
-  display: block;
-  height: 0px;
-  background-color: rgb(231, 231, 231);
-  transition-property: all;
-  transition-duration: 1.2s;
-  z-index: 4;
-}
-
-/*depth1*/
-.nav .dep1 {
-  position: relative;
-  z-index: 4;
-  font-size: 0px;
-  padding-top: 20px;
-  height: 100px;
-}
-
-
-
-
-/*depth2*/
-
-.nav .dep1 > li > a {
-  display: block;
-  padding: 30px 0;
-}
-
 
 
 /* main */
@@ -377,18 +350,18 @@ a {
   top: 50px;
 }
 .notice {
-  width: 1500px;
+  width: 80%;
   height: 60px;
   position: relative;
   overflow: hidden; /*이 부분만 풀면 내용 숨겨져요*/
-  margin-left: 200px;
+  margin-left: 10%;
   margin-bottom: 50px;
 }
 .notice h3 {
   text-decoration: underline;
   text-underline-position: under;
-  position: absolute;
-  top: 7px;
+  /* position: absolute;
+  top: 7px; */
   color: black;
   font-size: 35px;
 }
@@ -631,8 +604,8 @@ a {
   line-height: 420%;
   display: inline-block;
 
-  transition-property: all;
-  transition-duration: 2s;
+  transition-property: background-color,top;
+  transition-duration: 1.2s;
 }
 .bottom_menu .bottom_2 {
   position: relative;
@@ -642,24 +615,24 @@ a {
   line-height: 420%;
   display: inline-block;
 
-  transition-property: all;
-  transition-duration: 2s;
+  transition-property: background-color,top;
+  transition-duration: 1.2s;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1250px) {
   .bottom_menu {
-    width: 1180px;
+    width: 1250px;
   }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1250px) {
   .bottom_c_1 {
-    width: 1180px;
+    width: 1250px;
   }
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1400px) {
   .bottom_c_2 {
-    width: 1180px;
+    width: 1400px;
   }
 }
 .bottom_c_1 {
@@ -714,9 +687,9 @@ li.group_title{
 }
 
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1250px) {
   .footer {
-    width: 1180px;
+    width: 1250px;
   }
 }
 .footer {

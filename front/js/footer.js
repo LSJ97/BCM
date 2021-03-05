@@ -27,7 +27,7 @@ var flag_2 = 1;
       bottom_1[0].style.boxShadow="0px 7px 5px #3f51b5";
       
       bottom_2[0].style.backgroundColor = "rgb(35, 49, 71)";
-      bottom_2[0].style.top="0"+"px";
+      bottom_2[0].style.top="-1"+"px";
       bottom_2[0].style.boxShadow="none";
       bottom_c_2[0].style.height = "0"+"px";
 
@@ -38,7 +38,7 @@ var flag_2 = 1;
       bottom_1[0].style.backgroundColor = "rgb(35, 49, 71)";
       bottom_c_1[0].style.height = "0"+"px";
 
-      bottom_1[0].style.top="0"+"px";
+      bottom_1[0].style.top="-1"+"px";
       bottom_1[0].style.boxShadow="none";
 
       flag_1 = 1;
@@ -65,7 +65,7 @@ function bottom_script_2(){
       bottom_2[0].style.boxShadow="0px 7px 5px #3f51b5";
 
       bottom_1[0].style.backgroundColor = "rgb(35, 49, 71)";
-      bottom_1[0].style.top="0"+"px";
+      bottom_1[0].style.top="-1"+"px";
       bottom_1[0].style.boxShadow="none";
       bottom_c_1[0].style.height = "0"+"px";
 
@@ -77,7 +77,7 @@ function bottom_script_2(){
       bottom_2[0].style.backgroundColor = "rgb(35, 49, 71)";
       bottom_c_2[0].style.height = "0"+"px";
 
-      bottom_2[0].style.top="0"+"px";
+      bottom_2[0].style.top="-1"+"px";
       bottom_2[0].style.boxShadow="none";
 
       flag_2 = 1;
