@@ -49,7 +49,7 @@ function bottom_script_2(){
   if (flag_2 == 1 && flag_1 == 1){                                 /*두 바텀메뉴 다 off상태 오른쪽메뉴만 on한다*/   
       bottom_2[0].style.backgroundColor = "rgb(112, 152, 212)";  
       bottom_2[0].style.height="70"+"px";
-      bottom_c_2[0].style.height = "400"+"px";
+      bottom_c_2[0].style.height = "300"+"px";
 
       bottom_2[0].style.top="-6"+"px";
       bottom_2[0].style.boxShadow="0px 7px 5px #3f51b5";
@@ -59,7 +59,7 @@ function bottom_script_2(){
   else if (flag_2 == 1 && flag_1 == 0){                            /*오른쪽메뉴 off 왼쪽메뉴 on인상태 오른쪽메뉴를 on하고 왼쪽메뉴를 off한다*/ 
       bottom_2[0].style.backgroundColor = "rgb(112, 152, 212)";   
       bottom_2[0].style.height="70"+"px";
-      bottom_c_2[0].style.height = "400"+"px";
+      bottom_c_2[0].style.height = "300"+"px";
 
       bottom_2[0].style.top="-6"+"px";
       bottom_2[0].style.boxShadow="0px 7px 5px #3f51b5";

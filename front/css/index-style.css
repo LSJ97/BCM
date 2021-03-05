@@ -62,16 +62,21 @@ a {
       
       
   }
-  .nav .dep1 > li.logo,
-  .nav .dep1 > li.login{
+  .nav .dep1 > li.logo{
       width:200px;
-      padding: 30px 0; /*li.menu를 한꺼번에 묶어서 하지않은 이유는 a태그때문에 li.menu가 갇혀있기때문*/
+       /*li.menu를 한꺼번에 묶어서 하지않은 이유는 a태그때문에 li.menu가 갇혀있기때문*/
   }
   .nav .dep1 > li.menu{
       width:150px;
-      padding:0px;
   }
-  
+  .nav .dep1 > li.login{
+    margin-left:50px;
+  }
+
+  .nav .dep1 > li.login,
+  .nav .dep1 > li.join{
+    width:100px;
+  }
   /*depth2*/
   .nav .dep2{
       position: relative;
@@ -341,14 +346,14 @@ h5 {
 }
 
 /* notice */
-
+/*
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
   color: #000;
-}
+}*/
 
 .container{
   display:block;
@@ -523,40 +528,36 @@ a {
   transition-duration: 2s;    
 }
 
-.bottom_c_2 > ul{
+.bottom_c_2 > ul{  /*group2,3을 포함한 전체*/
   display:inline;
-  width:300px;
+  width:250px;
   text-align:left;
-  list-style:disc;
+}
+.bottom_c_2 > ul.group1{   /*gorup1만 크기크게*/
+  width:500px;
 }
 
 .group1 > li{
   display:inline-block;
   position:left;
-  width:70px;
+  width:150px;
   text-align:left; 
   margin-top:20px;
-  list-style-type: disc;
 }
-.group2 > li{
-  display:inline-block;
-  position:left;
-  width:70px;
-  text-align:left; 
-  margin-top:20px;
-  list-style: disc;
-}
+.group2 > li,
 .group3 > li{
   display:inline-block;
   position:left;
-  width:70px;
+  width:150px;
   text-align:left; 
   margin-top:20px;
-  list-style: disc;
 }
+
 li.group_title{    
-  width: 300px;
+  width: 500px;
   margin-top:40px;
+  margin-bottom:25px;
+
 }
 
 
@@ -568,7 +569,7 @@ li.group_title{
   }
 .footer{
   padding:20px;
-  padding-left:200px;
+  padding-left:300px;
   font-size:13px;
   text-align:left;
   background-color: rgb(79, 101, 145);
