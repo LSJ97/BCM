@@ -92,7 +92,6 @@ a {
   }
   .nav .dep1 > li > a{
       display:block;
-      padding: 30px 0;
   }
   
   
@@ -103,7 +102,7 @@ a {
   .nav .dep2 > li:hover > a{
       color:green;
   }
-}
+
 
 .nav2 {
   position: relative;
@@ -124,55 +123,17 @@ a {
   height: 100px;
 }
 
-.nav .dep1 > li {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  font-size: 16px;
-}
-.nav .dep1 > li.logo,
-.nav .dep1 > li.login {
-  width: 200px;
-  padding: 30px 0; /*li.menu를 한꺼번에 묶어서 하지않은 이유는 a태그때문에 li.menu가 갇혀있기때문*/
-}
-.nav .dep1 > li.menu {
-  width: 150px;
-  padding: 0px;
-}
+
+
 
 /*depth2*/
-.nav .dep2 {
-  position: relative;
-  z-index: 4;
-  display: block;
-  height: 0px;
-  overflow: hidden;
-  transition-property: all;
-  transition-duration: 1.2s;
-}
-.nav .dep2 a {
-  display: block;
-  padding: 10px 0;
-}
+
 .nav .dep1 > li > a {
   display: block;
   padding: 30px 0;
 }
 
-.nav .dep1 > li:hover > a {
-  color: green;
-}
-.nav .dep2 > li:hover > a {
-  color: green;
-}
 
-/*.menu_box{
-      position: absolute;
-      top:50px;
-      background-color: brown;
-      width:50px;
-      height:50px;
-  }*/
 
 /* main */
 main {
@@ -541,7 +502,7 @@ a {
   height: 440px;
   position: absolute;
   overflow: hidden;
-  margin: auto
+  margin: auto;
   margin-top: 3px;
   border: 1px solid #ccc;
 }
@@ -709,6 +670,8 @@ a {
   transition-property: all;
   transition-duration: 2s;
 }
+
+
 .bottom_c_2 {
   background-color: cornflowerblue;
   display: flex;
@@ -748,56 +711,17 @@ li.group_title{
   width: 500px;
   margin-top:40px;
   margin-bottom:25px;
-
-.bottom_c_2 > ul {
-  display: inline;
-  width: 300px;
-  text-align: left;
-  list-style: disc;
 }
 
-.group1 > li {
-  display: inline-block;
-  position: left;
-  width: 70px;
-  text-align: left;
-  margin-top: 20px;
-  list-style-type: disc;
-}
-.group2 > li {
-  display: inline-block;
-  position: left;
-  width: 70px;
-  text-align: left;
-  margin-top: 20px;
-  list-style: disc;
-}
-.group3 > li {
-  display: inline-block;
-  position: left;
-  width: 70px;
-  text-align: left;
-  margin-top: 20px;
-  list-style: disc;
-}
-li.group_title {
-  width: 300px;
-  margin-top: 40px;
-}
 
 @media screen and (max-width: 1180px) {
   .footer {
     width: 1180px;
   }
-.footer{
-  padding:20px;
-  padding-left:300px;
-  font-size:13px;
-  text-align:left;
 }
 .footer {
   padding: 20px;
-  padding-left: 200px;
+  padding-left: 300px;
   font-size: 13px;
   text-align: left;
   background-color: rgb(79, 101, 145);
