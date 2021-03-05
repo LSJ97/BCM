@@ -434,21 +434,22 @@ a {
 
 /* 아이콘 */
 .icon {width: 380px; height: 445px; margin-left: 1100px; margin-top: 3px;}
-.news1 {border: 1px solid #ccc; padding: 10px; width: 40%; height: 160px; float: left; }
-.news2 {border: 1px solid #ccc; padding: 10px; width: 40%; height: 160px; float: left; margin-left: 5px;}
-.news2 > a > img{width: 100px; height: 100px; position: absolute;}
+.news1 {border: 1px solid #ccc; padding: 10px; width: 45%; height: 180px; float: left; }
+.news2 {border: 1px solid #ccc; padding: 10px; width: 45%; height: 180px; float: left; margin-left: 5px;}
+.news2 > a > img{width: 130px; height: 130px; margin: 0 auto; position: absolute;}
 .news2 > p {display: none;}
-.news2:hover > p {display: inline; font-size: 18px; color: white;}
-.news2:hover {background-color: navy; width: 40%; height: 160px;}
+.news2:hover > h5 {display: none;}
+.news2:hover {background-color: #383e56; width: 45%; height: 180px; opacity: 0.7;}
+.news2 h5 {font-size: 18px; color: white; border: 1px solid #000;}}
 .news2:hover > h5 {display: none;}
 .news2 > h5 {position: absolute;}
-.news1 > a > img{width: 100px; height: 100px; position: absolute;}
+.news1 > a > img{width: 130px; height: 130px; position: absolute;}
 .news1 > p {display: none;}
 .news1:hover > p {display: inline; font-size: 18px; color: white;}
-.news1:hover {background-color: navy; width: 40%; height: 160px;}
+.news1:hover {background-color: #383e56; width: 45%; height: 180px; opacity: 0.7; }
 .news1:hover > h5 {display: none;}
 .news1 > h5 {position: absolute;}
-.call > img {border: 1px solid #ccc; padding: 10px; width: 81%; height: 275px; background-color: aqua; top: 5px; position: relative;}
+.call > img {border: 1px solid #ccc; padding: 10px; width: 91%; height: 257px; background-color: #383e56; top: 5px; position: relative;}
 
 /* footer */
 .bottom_menu{

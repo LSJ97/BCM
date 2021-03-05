@@ -2,7 +2,7 @@ $(document).ready(function () {
     const $slide = $(".photo");
     const $item = $slide.find(".photo-item");
     const $length = $item.length-1;
-    const $arrow = $slide.find("a");
+    const $arrow = $slide.find("#arrow");
     let count = 0;
     let time = false;
     let auto_play = setInterval(timer, 3000);

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".tabmenu .list").eq(0).show();
     $(".tabmenu ul li").eq(0).addClass("on");
     $(".tabmenu .list").eq(0).show();
     $(".tabmenu .inside").click(function(){
